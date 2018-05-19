@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,800");
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import './components/_variable.scss';
+@import './components/_header.scss';
+@import './components/_general.scss';
+@import'./components/_footer.scss';
+@import './normalize.css';
+
+body,
+html,
+header,
+section {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}

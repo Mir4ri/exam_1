@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__top ">
+            <div class="vlom_dopysaty_BEM container">
+            <div class="header__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190px" height="30px">
+                    <path fill-rule="evenodd" fill="rgb(253, 92, 8)" d="M178.970,20.237 L178.970,29.826 L171.015,29.826 L171.015,20.157 L160.463,-0.011 L169.306,-0.011 L175.179,12.234 L181.167,-0.011 L190.010,-0.011 L178.970,20.237 ZM164.386,29.826 L141.848,29.826 L141.848,-0.011 L149.803,-0.011 L149.803,23.340 L164.386,23.340 L164.386,29.826 ZM115.333,-0.011 L137.871,-0.011 L137.871,7.773 L123.287,7.773 L123.287,11.664 L135.219,11.664 L135.219,18.151 L123.287,18.151 L123.287,23.340 L137.871,23.340 L137.871,29.826 L115.333,29.826 L115.333,-0.011 ZM95.027,29.826 L83.340,-0.011 L91.891,-0.011 L98.312,18.838 L104.619,-0.011 L113.170,-0.011 L101.571,29.826 L95.027,29.826 ZM77.544,29.826 L75.284,24.637 L67.148,24.637 L64.929,29.826 L56.477,29.826 L56.462,29.826 L68.067,-0.011 L74.444,-0.011 L86.131,29.826 L77.544,29.826 ZM71.223,10.334 L68.651,18.151 L73.705,18.151 L71.223,10.334 ZM56.273,29.826 L56.337,29.826 L56.462,29.826 L56.391,30.010 L56.273,29.826 ZM41.440,20.746 L38.438,20.746 L38.438,29.826 L30.483,29.826 L30.483,-0.011 L43.822,-0.011 C45.288,-0.011 46.666,0.603 47.917,1.208 C49.151,1.805 50.233,2.904 51.134,3.871 C52.031,4.834 52.744,5.937 53.252,7.156 C53.762,8.384 54.020,9.640 54.020,10.896 C54.020,11.831 53.902,12.736 53.670,13.605 C53.436,14.473 53.097,15.282 52.662,16.048 C52.224,16.821 51.682,17.487 51.051,18.104 C50.584,18.561 50.066,18.895 49.505,19.252 L56.273,29.826 L47.317,29.826 L41.440,20.746 ZM45.019,8.570 C44.489,8.007 43.949,7.773 43.370,7.773 L38.438,7.773 L38.438,14.259 L43.575,14.259 C44.157,14.259 44.657,13.960 45.103,13.387 C45.586,12.770 45.830,11.927 45.830,10.926 C45.830,9.906 45.565,9.148 45.019,8.570 ZM17.225,29.826 L9.271,29.826 L9.271,7.773 L-0.010,7.773 L-0.010,-0.011 L26.506,-0.011 L26.506,7.773 L17.225,7.773 L17.225,29.826 Z"/>
+                </svg>
+        </div>
+            <ul class="header__nav">
+<li class="header__nav__el"><a href="#map" class="header__nav__el__text__link">
+                    <span class="header__nav__el__svg">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="33px" height="20px">
+                            <image  x="0px" y="0px" width="33px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAQCAMAAAAyEe/dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABZVBMVEU/PkE/PkFNTE9HRklPTlFOTVA/PkFGRUiamZtDQkVAP0I/PkFCQURfXmFKSUxRUFOIh4lNTE8/PkFDQkVjYmWdnZ5DQkVCQUQ/PkFIR0l1dHZtbG5NTE8/PkE/PkE/PkFIR0pLS01HRklOTU9LSk1MS02CgYORkZJKSUw/PkFEQ0ZNTU9BQENsa26bm5xNTE+LioxxcHKVlZZIR0o/PkFLSkxOTVA/PkE/PkE/PkFJSEubmpxramxAP0JOTVA/PkGDgoVNTE96enxIR0pMS04/PkE/PkFNTE+Yl5mKiYtTUlRIR0pMS04/PkE/PkFNTE+YmJlOTVA/PkE/PkFNTE6ZmZpubnBCQUNNTE9EQ0Y/PkE/PkFGRUhLSk1LSk1JSEs/PkE/PkE/PkHr6+v////v7+/z8/P6+vry8vLb29vi4eLPz8+enZ/k5OTa2tqxsLLKysvo6Om0tLX29vbDwsPQ0NHe3t670aGIAAAAY3RSTlMAIbDv88MR8v35gRb876Dy9dYUie/++4cflvHwrggFSZff9/Smp/T55k6K0P3v/rH28PruY6LKBB5i6f3v/sQV9PTy995HA9f79vLtqFkO2Py/Jw/Y/PD80ow5EPP14ppMBxoe0K7GAAAAAWJLR0Rkwtq4CQAAAAd0SU1FB+IFEwk5EXbx8e8AAADcSURBVBjTY2CAAEYGnICJmYWVDZcke3IKBycXDkluntSUVF4+HLJc/GkpKQKCQthlhUXSU1JExcThAkISSLKSUikpKRnSMrJAtpy8gqKSsgqSrKoaUDZFXUNTS1tHVy8zJUUJ2RJ9A5BslqFRNohOyTEGipmYmombA2kLS6vcFCjIs7axtbNnYJBxyC8QsFXl03BUg8gVFjk5u0i6uoFNc/cAiujlZIEkiks8vbx9fO3hVvn5B0DMKjXi5QzkCkL1YnBIaEqZaFh4RGQUlgCIjomNi09IxBXwSdiFAXXhMtzxu4+BAAAAAElFTkSuQmCC" />
+                        </svg>
+                    </span> 
+<span class="header__nav__el__text">
+ Let`s travel</span>
+</a>
+                </li>
+                <li class="header__nav__el header__nav__el--active"> <a href="#map" class="header__nav__el__text__link">
+                    <span class="header__nav__el__svg">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="17px" height="17px">
+                            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                            d="M8.501,-0.002 C8.499,-0.002 8.497,-0.002 8.494,-0.002 C8.493,-0.002 8.492,-0.002 8.491,-0.002 C8.488,-0.002 8.484,-0.002 8.481,-0.002 C3.792,0.009 -0.004,3.809 -0.004,8.495 C-0.004,13.179 3.792,16.979 8.481,16.991 C8.484,16.991 8.488,16.992 8.491,16.992 C8.492,16.992 8.493,16.992 8.494,16.992 C8.497,16.992 8.499,16.992 8.501,16.992 C13.198,16.992 17.007,13.186 17.007,8.495 C17.007,3.802 13.198,-0.002 8.501,-0.002 ZM8.842,5.083 C9.743,5.057 10.621,4.939 11.466,4.734 C11.721,5.735 11.879,6.890 11.903,8.155 L8.842,8.155 L8.842,5.083 ZM8.842,4.403 L8.842,0.731 C9.759,0.984 10.688,2.206 11.281,4.079 C10.495,4.269 9.679,4.379 8.842,4.403 ZM8.161,0.723 L8.161,4.403 C7.317,4.379 6.495,4.266 5.703,4.075 C6.300,2.190 7.238,0.963 8.161,0.723 ZM8.161,5.082 L8.161,8.155 L5.078,8.155 C5.103,6.887 5.262,5.733 5.516,4.730 C6.368,4.937 7.252,5.057 8.161,5.082 ZM4.393,8.155 L0.685,8.155 C0.760,6.408 1.411,4.807 2.455,3.539 C3.212,3.955 4.016,4.296 4.858,4.552 C4.583,5.636 4.418,6.858 4.393,8.155 ZM4.393,8.835 C4.418,10.131 4.583,11.353 4.858,12.437 C4.016,12.693 3.212,13.033 2.455,13.451 C1.411,12.183 0.760,10.581 0.685,8.835 L4.393,8.835 ZM5.078,8.835 L8.161,8.835 L8.161,11.904 C7.252,11.927 6.368,12.049 5.516,12.257 C5.261,11.255 5.103,10.100 5.078,8.835 ZM8.161,12.583 L8.161,16.266 C7.237,16.025 6.299,14.798 5.702,12.911 C6.494,12.719 7.316,12.606 8.161,12.583 ZM8.842,16.258 L8.842,12.583 C9.680,12.606 10.495,12.717 11.281,12.906 C10.689,14.781 9.760,16.004 8.842,16.258 ZM8.842,11.904 L8.842,8.835 L11.903,8.835 C11.879,10.099 11.721,11.252 11.467,12.253 C10.621,12.047 9.744,11.927 8.842,11.904 ZM12.588,8.835 L16.318,8.835 C16.243,10.581 15.592,12.182 14.549,13.450 C13.785,13.030 12.974,12.687 12.125,12.430 C12.399,11.348 12.564,10.129 12.588,8.835 ZM12.588,8.155 C12.564,6.860 12.399,5.639 12.124,4.556 C12.973,4.299 13.783,3.956 14.547,3.537 C15.591,4.804 16.243,6.406 16.318,8.155 L12.588,8.155 ZM14.078,3.018 C13.401,3.377 12.686,3.675 11.940,3.900 C11.542,2.622 10.984,1.579 10.324,0.893 C11.772,1.241 13.066,1.990 14.078,3.018 ZM6.652,0.900 C5.996,1.584 5.440,2.622 5.043,3.894 C4.304,3.669 3.596,3.375 2.925,3.018 C3.931,1.996 5.214,1.249 6.652,0.900 ZM2.923,13.969 C3.594,13.611 4.303,13.317 5.043,13.091 C5.439,14.365 5.995,15.405 6.652,16.089 C5.213,15.739 3.929,14.992 2.923,13.969 ZM10.323,16.095 C10.984,15.411 11.543,14.366 11.941,13.086 C12.688,13.312 13.403,13.608 14.080,13.970 C13.068,14.999 11.773,15.749 10.323,16.095 Z"/>
+                        </svg>
+                    </span>
+<span class="header__nav__el__text">
+   Cities</span></a>
+                </li>
+<li class="header__nav__el">
+    <a href="#safari" class="header__nav__el__text__link">
+                    <span class="header__nav__el__svg">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="28px" height="10px">
+                            <image  x="0px" y="0px" width="28px" height="10px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAKCAMAAACQXM4gAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABF1BMVEVmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGxmaGz///8G29ySAAAAW3RSTlMAJLDf4u7+9OrPpjcg2nspHhEBDhMvZuhkBhw1jOkm0K6U64gHgsGlg188t08+XH+ix/NzIucrGZz725Mhu7GqmjBivNIFMuwMoK1HRE5VFOBjKghQ9aeS8OVtIGCK3QAAAAFiS0dEXOrYAJcAAAAHdElNRQfiBRMJOB1mXIyFAAAAq0lEQVQY02NgAAFGJmYWVla2aHYOTi5uBlTAw8vHLyAoKMQgLCIqJi6BkJCUkpaRFUNSKSevIAVjKyrJK/OgmKOiyqGmrqGpJczAoK3DgAF4dPX0DQyNjBmMBBhwABNxBlMzIRyS5tEMFuyWVtYMDDYWtkBgZw8CDoqODAxOzlYuQBWubu7SHp5e3j4+Pr5+ICDmYOsvFxAYFAw2IIQ5NEwYyUDJ8IjIKCANAGGxFtGVpS4AAAAAAElFTkSuQmCC" />
+                        </svg>
+                    </span>
+<span class="header__nav__el__text">Best Offers</span>
+</a>
+                </li>
+                <li class="header__nav__el"><a href="#destination" class="header__nav__el__text__link">
+                    <span class="header__nav__el__svg">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="16px" height="19px">
+                            <path fill-rule="evenodd"  fill="rgb(102, 104, 108)"
+                            d="M13.201,11.965 C13.020,15.491 10.144,18.296 6.612,18.296 C2.964,18.296 0.006,15.303 0.006,11.613 L0.006,6.337 L12.524,6.337 L13.219,6.337 L16.000,6.337 L16.000,11.965 L13.201,11.965 ZM12.524,7.040 L0.702,7.040 L0.702,11.613 C0.702,14.910 3.353,17.592 6.612,17.592 C9.872,17.592 12.524,14.910 12.524,11.613 L12.524,7.040 ZM15.305,7.040 L13.219,7.040 L13.219,11.261 L15.305,11.261 L15.305,7.040 ZM13.219,18.999 L0.006,18.999 L0.006,18.296 L6.612,18.296 L13.219,18.296 L13.219,18.999 ZM9.046,1.061 L9.742,1.061 L9.742,4.227 L9.046,4.227 L9.046,1.061 ZM6.265,0.005 L6.960,0.005 L6.960,4.227 L6.265,4.227 L6.265,0.005 ZM3.483,1.061 L4.179,1.061 L4.179,4.227 L3.483,4.227 L3.483,1.061 Z"/>
+                        </svg>
+                    </span>
+<span class="header__nav__el__text">Hot Offers </span></a>
+                </li>
+            </ul>
+            </div>
+            </div>
+        </div>
+        <div class="header__hero">
+            <div class="header__hero__a container">
+                <h1 class="header__hero__a__title--light">experience</h1>
+                <h1 class="header__hero__a__title--bold">
+                    american<br>
+                    holliday
+                </h1>
+                <p class="header__hero__a__text">America has been growing as a tourist destination, and as it becomes more and more accustomed to receiving so many visitors,its hospitality just gets better.</p>
+            </div>
+        </div>
+    </header>
+    <section class="destination container" id="destination">
+        <div class="destination__a">
+            <div class="destination__a__title">
+                <h1 class="destination__a__title--bold">personally</h1>
+                <h1 class="destination__a__title--light">tailored experiences</h1>
+            </div>
+            <div class="destination__a__text">
+                 From the breathtaking national parks in the Western U.S. to the charming Southern towns and historic cities in the East,
+                TRAVELY offers escorted tours throughout Canada and the United States.
+            </div>
+        </div>
+        <div class="destination__img">
+            <div class="destination__img__c"><span class="destination__img__c__text"></span><img class="destination__img__c__1" src="img/1.jpg" alt="1"></div>
+            <div class="destination__img__c"><span class="destination__img__c__text"></span><img class="destination__img__c__2" src="img/2.jpg" alt="2"></div>
+            <div class="destination__img__c"><span class="destination__img__c__text"></span><img class="destination__img__c__3" src="img/3.jpg" alt="3"></div>
+            <div class="destination__img__c"><span class="destination__img__c__text"></span><img class="destination__img__c__4" src="img/4.jpg" alt="4"></div>
+            <div class="destination__img__c"><span class="destination__img__c__text"></span><img class="destination__img__c__5" src="img/5.jpg" alt="5"></div>
+            <div class="destination__img__c"><span class="destination__img__c__text"></span><img class="destination__img__c__6" src="img/6.jpg" alt="6"></div>
+        </div>
+        <button class="destination__button">view all</button>
+    </section>
+    <section class="safari" id="safari">
+        <div class="safari__slider">
+            <div class="safari__slider__slide container">
+                <h2 class="safari__slider__slide__best__offers">Best Offers</h2>
+                <div class="safari__slider__slide__title">
+                    <h1 class="safari__slider__slide__title--light">experience</h1>
+                    <h1 class="safari__slider__slide__title--bold">african safari</h1>
+                    <p class="safari__slider__slide__title__text">Africa has been growing as a tourist destination, and as it becomes more and more accustomed to receiving so many visitors,
+                    its hospitality just gets better.</p>
+                </div>
+            </div>
+            <div class="safari__slider__slide container">
+                <h2 class="safari__slider__slide__best__offers">Best Offers</h2>
+                <div class="safari__slider__slide__title">
+                    <h1 class="safari__slider__slide__title--light">experience</h1>
+                    <h1 class="safari__slider__slide__title--bold">african safari</h1>
+                    <p class="safari__slider__slide__title__text">Africa has been growing as a tourist destination, and as it becomes more and more accustomed to receiving so many
+                        visitors, its hospitality just gets better.</p>
+                </div>
+            </div>
+            <div class="safari__slider__slide container">
+                <h2 class="safari__slider__slide__best__offers">Best Offers</h2>
+                <div class="safari__slider__slide__title">
+                    <h1 class="safari__slider__slide__title--light">experience</h1>
+                    <h1 class="safari__slider__slide__title--bold">african safari</h1>
+                    <p class="safari__slider__slide__title__text">Africa has been growing as a tourist destination, and as it becomes more and more accustomed to receiving so many
+                        visitors, its hospitality just gets better.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS2K6Zv4YkeFFznnESYgGAJPrHiLJNaI4&callback=initMap" async
+    defer></script>
+    <script src="js/main.js"></script>
+    <section class="map">
+        <div id="map"></div>
+    </section>
+    <footer class="footer">
+        <div class="footer__l">
+            <div class="footer__l__title">
+                
+            </div>
+        </div>
+            <div class="footer__f">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144px" height="24px">
+                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M135.336,16.037 L135.336,23.429 L129.336,23.429 L129.336,15.975 L121.377,0.429 L128.047,0.429 L132.477,9.867 L136.994,0.429 L143.664,0.429 L135.336,16.037 ZM124.336,23.429 L107.336,23.429 L107.336,0.429 L113.336,0.429 L113.336,18.429 L124.336,18.429 L124.336,23.429 ZM87.336,0.429 L104.336,0.429 L104.336,6.429 L93.336,6.429 L93.336,9.429 L102.336,9.429 L102.336,14.429 L93.336,14.429 L93.336,18.429 L104.336,18.429 L104.336,23.429 L87.336,23.429 L87.336,0.429 ZM72.021,23.429 L63.205,0.429 L69.655,0.429 L74.499,14.958 L79.255,0.429 L85.705,0.429 L76.956,23.429 L72.021,23.429 ZM58.833,23.429 L57.128,19.429 L50.992,19.429 L49.318,23.429 L42.943,23.429 L42.932,23.429 L51.685,0.429 L56.495,0.429 L65.311,23.429 L58.833,23.429 ZM54.065,8.403 L52.126,14.429 L55.937,14.429 L54.065,8.403 ZM42.789,23.429 L42.837,23.429 L42.932,23.429 L42.878,23.571 L42.789,23.429 ZM31.601,16.429 L29.336,16.429 L29.336,23.429 L23.336,23.429 L23.336,0.429 L33.397,0.429 C34.503,0.429 35.542,0.902 36.486,1.368 C37.417,1.828 38.233,2.676 38.913,3.421 C39.589,4.163 40.127,5.014 40.510,5.954 C40.895,6.901 41.090,7.868 41.090,8.836 C41.090,9.557 41.001,10.255 40.826,10.924 C40.649,11.594 40.394,12.218 40.065,12.808 C39.735,13.403 39.326,13.917 38.851,14.393 C38.498,14.745 38.107,15.002 37.684,15.277 L42.789,23.429 L36.034,23.429 L31.601,16.429 ZM34.301,7.043 C33.901,6.610 33.494,6.429 33.057,6.429 L29.336,6.429 L29.336,11.429 L33.211,11.429 C33.650,11.429 34.027,11.198 34.364,10.757 C34.728,10.281 34.913,9.632 34.913,8.859 C34.913,8.073 34.712,7.489 34.301,7.043 ZM13.336,23.429 L7.336,23.429 L7.336,6.429 L0.336,6.429 L0.336,0.429 L20.336,0.429 L20.336,6.429 L13.336,6.429 L13.336,23.429 Z"/>
+                </svg>
+            </div>
+    </footer>
+</body>
+</html>

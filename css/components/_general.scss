@@ -1,0 +1,107 @@
+.destination{
+    .destination__a{
+        display: flex;
+        align-items: flex-start;
+        .destination__a__title{
+            width: 400px;
+            .destination__a__title--bold {
+                margin: 0;
+                text-transform: uppercase;
+                color: $orange;  
+                font-size: 64px;
+            }
+            .destination__a__title--light{
+                margin: 0;
+                text-transform: uppercase;
+                font-size: light;
+                font-size: 28px;
+            }
+        }
+        .destination__a__text{
+            width: 600px;
+            margin: 12px 0 0 50px;
+            font-weight:600;
+        }
+    }
+    .destination__img{
+        display:flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        .destination__img__c {
+            .destination__img__1 {
+                &:before {
+                    content: '';
+                    height: 40px;
+                    width: 100%;
+                    background: $orange;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }  
+    } 
+    .destination__button {
+        border: none;
+        background: $ba;
+        color: #FFF;
+        padding: 0.7em 3em;
+        text-transform: uppercase;
+        float: right;
+        border: 2px solid transparent;
+        &:hover{
+            background: transparent;
+            border: 2px solid $ba;
+            transition: all .3s ease;
+            color: $ba;
+        }
+        &:focus{
+            outline: 2px solid $orange;
+        }
+    }
+}  
+.safari{
+    padding-top: 320px;
+    .safari__slider{
+         background: url(../img/safari.jpg);
+         height: 100%;
+         color: #FFF;
+       .safari__slider__slide{
+           
+            .safari__slider__slide__best__offers{
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                padding-top: 40px;
+                margin-bottom: 30px;
+                font-family: 'Indie Flower', cursive;
+            }
+       }
+       .safari__slider__slide__title{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           text-transform: uppercase;
+           .safari__slider__slide__title--light{
+               margin:0;
+               font-weight: 300;
+           }
+           .safari__slider__slide__title--bold{
+               margin:0;
+               font-size: 64px;
+           }
+           .safari__slider__slide__title__text{
+               width: 600px;
+               font-size: 12px;
+               text-align: center;
+               font-weight: bold;
+           }
+       }
+    }
+}
+
+.map {
+    #map{
+        height: 600px;
+    }
+}

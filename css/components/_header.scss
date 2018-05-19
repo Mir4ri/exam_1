@@ -1,0 +1,82 @@
+.header{
+    padding-bottom: 100px;
+    .header__top{
+        z-index: 99;
+         position: fixed;
+         background: #FFF;
+         width: 100%;
+         .vlom_dopysaty_BEM{
+             display: flex;
+             justify-content: space-between;
+            .header__nav {
+                padding: 0;
+                display: inline-flex;
+                font-size: 0;
+                .header__nav__el {
+                    display: inline-flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    width: 100px;
+                    height: 50px;
+                    list-style: none;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: bold;
+                    &:hover{
+                        background: $orange;
+                        color: #FFF;
+                        cursor: pointer;
+                    }
+                    span {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .header__nav__el__text {
+                        text-transform: uppercase;
+                    }
+                    .header__nav__el__svg {}
+                    .header__nav__el__text__link{
+                        text-decoration: none;
+                        color: #000;
+                        
+                    }
+                }
+                .header__nav__el--active {
+                    background: $orange;
+                    
+                }
+            }
+         }
+        
+    }  
+    .header__hero {
+        background: url('../img/hero.jpg');
+        height: 100%;
+        background-attachment: fixed;
+        color: #FFF;
+        .header__hero__a{
+            padding-top: 330px;
+            
+            .header__hero__a__title--light {
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: 300;
+                font-size: 36px;
+            }
+
+            .header__hero__a__title--bold {
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 64px;
+            }
+
+            .header__hero__a__text {
+                font-weight: bold;
+                font-size: 12px;
+                padding-right: 650px;
+            }
+        }
+    }
+}
